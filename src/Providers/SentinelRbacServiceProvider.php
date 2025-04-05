@@ -12,10 +12,10 @@ class SentinelRbacServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // Load migrations
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
 
         // Load routes
-        $this->loadRoutesFrom(__DIR__.'/../routes/sentinelrbac.php');
+        $this->loadRoutesFrom(__DIR__.'/../../routes/sentinelrbac.php');
 
         // Blade directives
         Blade::if('role', fn($role) => auth()->check() && auth()->user()->hasRole($role));
