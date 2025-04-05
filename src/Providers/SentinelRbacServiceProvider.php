@@ -5,7 +5,7 @@ namespace ABMemon\SentinelRBAC\Providers;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
-use ABMemon\SentinelRBAC\Permission;
+use ABMemon\SentinelRBAC\Models;
 
 class SentinelRbacServiceProvider extends ServiceProvider
 {
