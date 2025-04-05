@@ -32,9 +32,13 @@ class SentinelRbacServiceProvider extends ServiceProvider
         });
 
         // Gate definitions for permissions
-        Permission::all()->each(function ($permission) {
-            Gate::define($permission->name, fn($user) => $user->hasPermission($permission->name));
-        });
+        $this->app->booted(function () {
+			if (\Illuminate\Support\Facades\Schema::hasTable('permissions')) {
+				Permission::all()->each(function ($permission) {
+					Gate::define($permission->name, fn($user) => $user->hasPermission($permission->name));
+				});
+			}
+		});
 
         // Publish config
         $this->publishes([
