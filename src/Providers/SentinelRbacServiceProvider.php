@@ -38,13 +38,13 @@ class SentinelRbacServiceProvider extends ServiceProvider
 
         // Publish config
         $this->publishes([
-            __DIR__.'/../config/sentinelrbac.php' => config_path('sentinelrbac.php'),
+            __DIR__.'/../../config/sentinelrbac.php' => config_path('sentinelrbac.php'),
         ], 'config');
     }
 
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/sentinelrbac.php', 'sentinelrbac');
+        $this->mergeConfigFrom(__DIR__.'/../../config/sentinelrbac.php', 'sentinelrbac');
 
         $this->commands([
             \ABMemon\SentinelRBAC\Console\Commands\MakeRoleCommand::class,
