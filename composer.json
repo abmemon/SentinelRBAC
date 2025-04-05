@@ -1,6 +1,6 @@
 {
-  "name": "abmemon/sentinel-rbac",
-  "description": "Custom Laravel RBAC package with roles, permissions, and groups",
+  "name": "abmemon/sentinelrbac",
+  "description": "SentinelRBAC is a powerful and flexible Role-Based Access Control (RBAC) package for Laravel. Built for modern Laravel applications, it provides a clean and scalable way to manage roles, permissions, and access gates — with zero friction.",
   "type": "library",
   "license": "MIT",
   "authors": [
