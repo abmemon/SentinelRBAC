@@ -1,0 +1,26 @@
+{
+  "name": "abmemon/sentinel-rbac",
+  "description": "Custom Laravel RBAC package with roles, permissions, and groups",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ahmed Bakhsh Memon",
+      "email": "inbox@abmemon.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ABMemon\\SentinelRBAC\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ABMemon\\SentinelRBAC\\Providers\\RbacServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
