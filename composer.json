@@ -17,7 +17,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "ABMemon\\SentinelRBAC\\Providers\\RbacServiceProvider"
+        "ABMemon\\SentinelRBAC\\Providers\\SentinelRbacServiceProvider"
       ]
     }
   },
