@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Traits;
+namespace ABMemon\SentinelRBAC\Traits\;
 
 use App\Models\Role;
 use App\Models\Permission;
