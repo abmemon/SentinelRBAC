@@ -2,9 +2,9 @@
 
 namespace ABMemon\SentinelRBAC\Traits;
 
-use App\Models\Role;
-use App\Models\Permission;
-use App\Models\Group;
+use ABMemon\SentinelRBAC\Models\Role;
+use ABMemon\SentinelRBAC\Models\Permission;
+use ABMemon\SentinelRBAC\Models\Group;
 
 trait HasRolesAndPermissions
 {
